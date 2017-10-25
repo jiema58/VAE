@@ -18,9 +18,13 @@ Thanks to [1] to deliver the inspiration of Bernoulli cross-entropy
  
 ##Result:
 
-Latent Code Distribution:
+2-D Latent Code space Distribution:
 
 ![latent code](https://github.com/WoshidaCaiB/VAE/blob/master/image/latent.png)
+
+Use 2-D latent codes to generate image. Latent codes are sampled from uniform distribution. Below is the generated images:
+
+![generated](https://github.com/WoshidaCaiB/VAE/blob/master/image/generated.png)
 
 The dimension of latent codes has an impact on VAE performance. I trained 3 models with latent dimension: 2, 20, 100. 20 model renders the best performance while 100 model ranks the last
 
