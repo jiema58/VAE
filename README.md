@@ -1,17 +1,28 @@
 # VAE
 
-自己尝试写一个tensorflow的vae实现 VAE论文[2]
+##A vanila VAE model
 
-照猫画虎于大神Jan Hendrik Metzen的这篇文章[1]  
+Build a vanila VAE model. It is composed of 2 parts: 1.Encoder 2.Decoder
 
-Encoder和Decoder都用的两层全连接网络 默认激活函数: softplus  参数更新方法: Adam
+1.Encoder - a MLP with 2 hidden layers. Activation function: softplus
 
-python - 3.6
+2.Decoder - a MLP with 2 hidden layers. Activation function: softplus
 
-tensorflow - 1.2
+Thanks to [1] to deliver the inspiration of Bernoulli cross-entropy 
 
-reference:
+##Dependencies
+
+1. Python - 3.6
+
+2. Tensorflow - 1.0
+ 
+##Result:
+
+The dimension of latent codes has an impact on VAE performance. I trained 3 models with latent dimension: 2, 20, 100. 20 model renders the best performance while 100 model ranks the last
+
+##Reference:
 
 [1].http://jmetzen.github.io/2015-11-27/vae.html
 
-[2].Tutorial on Variational Autoencoders. Carl Doersch. arXiv:1606.05908, 2016
+
+
